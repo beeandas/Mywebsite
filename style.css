@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fascinate&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    text-align: center;
+}
+
+.max-width{
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    width: 100%;
+    background: #A10035;
+    padding: 5px;
+    
+}
+.navbar .logo a{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin-left: 25px;
+}
+h1{
+    margin-top: 0;
+    width: 20%;
+    margin: 0 auto ;
+    font-size: 3.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.top-container{
+    background-color: #fff1f1;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-container h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 20px auto 20px;
+    width: 50%;
+}
+.top-container .animate{
+    background: #FF869E;
+    font-size: 35px;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px  black;
+}
+.top-container .animate::before{
+    content:'';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+    0%{
+        content: 'Learner';
+    }
+    25%{
+        content: 'Programmer';
+    }
+    50%{
+        content: 'Designer';
+    }
+    75%{
+        content: 'Coder';
+    }
+    100%{
+        content: 'Investor';
+    }
+}
+
+
+.mob_img{
+    position: absolute;
+    left: 200px;
+    bottom: 400px;
+    width: 300px;
+}
+.cloud_img{
+    position: absolute;
+    right: 250px;
+    top: 50px;
+}
+
+.middle-container{
+    background: #2C3639;
+    padding: 25px;
+}
+
+.middle-container .info img{
+    margin: 20px;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+.middle-container .info{
+    width: 60%;
+    margin: 0px auto 0px;
+
+}
+
+.middle-container .info .passport_pic{
+    float: left;
+    margin-right: 40px;
+}
+
+.middle-container h3{
+    text-decoration-line: underline;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.middle-container p{
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.middle-container .animate-character
+{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display:inline-block;
+    font-size: 150px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.skills{
+    font-family: 'Ubuntu', sans-serif;  
+    background-color: #F7ECDE;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.title h2 span{
+    font-size: 35px;
+    text-decoration-line: underline;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px  black;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.content{
+    display: flex;
+    margin-left: 100px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.content p{
+    margin: 30px 30px 0px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    text-align: left;
+}
+
+.content img{
+    height: 300px;
+
+}
+.content .image_boy{
+    padding-top: 50px;
+}
+
+table{
+    height: 300px;
+    margin-right: 100px;
+}
+
+.border{
+    margin-top: 80px;
+    height: 200px;
+    border: solid 4px;
+    border-right: none;
+    color: black;
+}
+table td{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.button a{
+    position: relative;
+    left: 40%;
+    margin: 10px;
+    font-weight: 300;
+    background: black;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    border-width: 5px;
+    box-shadow: 5px 5px 10px  black;
+    border-radius: 5px;
+
+}
+.button a:hover{
+    background: white;
+    color: black;
+    border-color: #fff;
+}
+
+.contact_me{
+    background: #FFC4C4;
+    padding-bottom: 10px;
+}
+.contact_me h2{
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+    font-size: 35px;
+    
+}
+.contact_me h3{
+    font-family: 'Ubuntu', sans-serif;
+    color: #A10035;
+}
+
+.contact_me .one_line{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_me .line{
+    margin: 0px 20px;
+    border: solid black;
+    display: inline-block;
+    transform: rotate(90deg);
+    
+}
+.list{
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+}
+.list p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 20px 0px 25px;
+}
+
+.copyright span{
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    left: 45%;
+    font-size: 17px;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
